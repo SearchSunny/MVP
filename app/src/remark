@@ -1,0 +1,8 @@
+MVP流程步骤说明：
+1、UI实现View方法，引用Presenter
+2、Presenter调用Model，走Model具体逻辑
+3、Model逻辑实现，回调Presenter方法
+4、Presenter回调View，即回到UI,回调View
+
+使用MVP时，Activity和Fragmetn变成了MVC模式中View层，Presenter相当于MVC模式中Controller层，处理业务逻辑。
+每一个Activity都有一个相应的presenter来处理数据进而获取Model.
